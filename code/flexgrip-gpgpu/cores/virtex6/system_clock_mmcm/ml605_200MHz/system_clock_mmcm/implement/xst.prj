@@ -1,0 +1,2 @@
+vhdl work ../../system_clock_mmcm.vhd
+vhdl work ../example_design/system_clock_mmcm_exdes.vhd

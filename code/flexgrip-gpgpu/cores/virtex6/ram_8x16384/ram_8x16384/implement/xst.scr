@@ -1,0 +1,13 @@
+run
+-ifmt VHDL
+-ent ram_8x16384_exdes
+-p xc6vlx240t-ff1156-1
+-ifn xst.prj
+-write_timing_constraints No
+-iobuf YES
+-max_fanout 100
+-ofn ram_8x16384_exdes 
+-ofmt NGC
+-bus_delimiter ()
+-hierarchy_separator /
+-case Maintain

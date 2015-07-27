@@ -1,0 +1,42 @@
+
+SETPROJECT ./
+SET ASYSymbol = false
+SET BusFormat = BusFormatParenNotRipped
+SET XilinxFamily = virtex6
+SET simulationfiles = Behavioral
+SET devicefamily = virtex6
+SET device = xc6vlx240t
+SET package = ff1156
+SET speedgrade = -1
+SET VerilogSim = false
+SET VHDLSim = true
+SELECT Adder_Subtracter virtex6 Xilinx,_Inc. 11.0
+# 14.3_P.40xd
+# DEVICE virtex6
+# VHDL
+CSET AINIT_Value = 0
+CSET A_Type = Signed
+CSET A_Width = 9
+CSET Add_Mode = Subtract
+CSET B_Constant = false
+CSET B_Type = Signed
+CSET B_Value = 0
+CSET B_Width = 9
+CSET Borrow_Sense = Active_Low
+CSET Bypass = false
+CSET Bypass_CE_Priority = Bypass_Overrides_CE
+CSET Bypass_Sense = Active_Low
+CSET CE = false
+CSET C_In = false
+CSET C_Out = false
+CSET Implementation = Fabric
+CSET Latency = 0
+CSET Out_Width = 9
+CSET SCLR = false
+CSET SINIT = false
+CSET SINIT_Value = 0
+CSET SSET = false
+CSET Sync_CE_Priority = Sync_Overrides_CE
+CSET Sync_Ctrl_Priority = Reset_Overrides_Set
+CSET component_name = addsb_11_0_466a9d5db3d8f7f1
+GENERATE

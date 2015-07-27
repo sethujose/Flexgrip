@@ -1,0 +1,23 @@
+##NET "reset"				LOC = "H10";
+
+#################################################################################
+## Clocks 
+NET "clk_in_p" TNM_NET = TNM_clk_in_p;
+TIMESPEC "TS_clk_in_p" = PERIOD "TNM_clk_in_p" 10.000 ns;
+
+NET "clk_in_p" CLOCK_DEDICATED_ROUTE = FALSE;
+PIN "uSystemClock/MMCM_BASE_inst.CLKIN1" CLOCK_DEDICATED_ROUTE = FALSE;
+
+Net uSystemClock/clk_ibuf TNM_NET = clk_ibuf;
+TIMESPEC TS_clk_ibuf = PERIOD clk_ibuf 10000 ps;
+
+NET  "clk_in_p"				IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE;
+NET  "clk_in_n"				IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE;
+NET  "clk_in_p"				LOC = "J9";
+NET  "clk_in_n"				LOC = "H9";
+
+NET  "block_scheduler_en"				LOC = "G26";
+NET  "write_instructions_en"			LOC = "G17";
+NET  "write_instructions_done"			LOC = "AC22";
+NET  "host_reset_out"                   LOC = "AE22";
+NET  "kernel_done"					    LOC = "AC24";

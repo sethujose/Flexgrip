@@ -1,0 +1,890 @@
+Release 14.3 - xst P.40xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "xst_compute_set_pred_i.prj"
+Input Format                       : mixed
+
+---- Target Parameters
+Output File Name                   : "compute_set_pred_i.ngc"
+Output Format                      : NGC
+Target Device                      : xc6vlx240t-1ff1156
+
+---- Source Options
+Entity Name                        : compute_set_pred_i
+Top Module Name                    : compute_set_pred_i
+Automatic Register Balancing       : no
+
+---- Target Options
+Add IO Buffers                     : NO
+Pack IO Registers into IOBs        : Auto
+
+---- General Options
+Keep Hierarchy                     : NO
+Bus Delimiter                      : ()
+Hierarchy Separator                : /
+
+---- Other Options
+report_timing_constraint_problems  : warning
+
+=========================================================================
+
+WARNING:Xst:29 - Optimization Effort not specified
+The following parameters have been added:
+Optimization Goal                  : SPEED
+
+=========================================================================
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd" into library work
+Parsing entity <addsb_11_0_466a9d5db3d8f7f1>.
+Parsing architecture <addsb_11_0_466a9d5db3d8f7f1_a> of entity <addsb_11_0_466a9d5db3d8f7f1>.
+Parsing package <conv_pkg>.
+Parsing package body <conv_pkg>.
+Parsing entity <srl17e>.
+Parsing architecture <structural> of entity <srl17e>.
+Parsing entity <synth_reg>.
+Parsing architecture <structural> of entity <synth_reg>.
+Parsing entity <synth_reg_reg>.
+Parsing architecture <behav> of entity <synth_reg_reg>.
+Parsing entity <single_reg_w_init>.
+Parsing architecture <structural> of entity <single_reg_w_init>.
+Parsing entity <synth_reg_w_init>.
+Parsing architecture <structural> of entity <synth_reg_w_init>.
+Parsing entity <xladdsub_compute_set_pred_i>.
+Parsing architecture <behavior> of entity <xladdsub_compute_set_pred_i>.
+Parsing entity <constant_b437b02512>.
+Parsing architecture <behavior> of entity <constant_b437b02512>.
+Parsing entity <constant_963ed6358a>.
+Parsing architecture <behavior> of entity <constant_963ed6358a>.
+Parsing entity <constant_91ef1678ca>.
+Parsing architecture <behavior> of entity <constant_91ef1678ca>.
+Parsing entity <constant_bc54100077>.
+Parsing architecture <behavior> of entity <constant_bc54100077>.
+Parsing entity <constant_37567836aa>.
+Parsing architecture <behavior> of entity <constant_37567836aa>.
+Parsing entity <constant_6293007044>.
+Parsing architecture <behavior> of entity <constant_6293007044>.
+Parsing entity <convert_func_call>.
+Parsing architecture <behavior> of entity <convert_func_call>.
+Parsing entity <xlconvert>.
+Parsing architecture <behavior> of entity <xlconvert>.
+Parsing entity <inverter_e5b38cca3b>.
+Parsing architecture <behavior> of entity <inverter_e5b38cca3b>.
+Parsing entity <logical_80f90b97d0>.
+Parsing architecture <behavior> of entity <logical_80f90b97d0>.
+Parsing entity <logical_aacf6e1b0e>.
+Parsing architecture <behavior> of entity <logical_aacf6e1b0e>.
+Parsing entity <logical_a8f7ff4c23>.
+Parsing architecture <behavior> of entity <logical_a8f7ff4c23>.
+Parsing entity <mux_2af8d8c05a>.
+Parsing architecture <behavior> of entity <mux_2af8d8c05a>.
+Parsing entity <mux_6ef2c99a1b>.
+Parsing architecture <behavior> of entity <mux_6ef2c99a1b>.
+Parsing entity <mux_67acc0d350>.
+Parsing architecture <behavior> of entity <mux_67acc0d350>.
+Parsing entity <mux_a3706fc7d1>.
+Parsing architecture <behavior> of entity <mux_a3706fc7d1>.
+Parsing entity <negate_9ede1a16c5>.
+Parsing architecture <behavior> of entity <negate_9ede1a16c5>.
+Parsing entity <relational_3ffd1d0a40>.
+Parsing architecture <behavior> of entity <relational_3ffd1d0a40>.
+Parsing entity <relational_3ff7ebf1f0>.
+Parsing architecture <behavior> of entity <relational_3ff7ebf1f0>.
+Parsing entity <relational_59ca12fcca>.
+Parsing architecture <behavior> of entity <relational_59ca12fcca>.
+Parsing entity <relational_73637bf7b8>.
+Parsing architecture <behavior> of entity <relational_73637bf7b8>.
+Parsing entity <xlslice>.
+Parsing architecture <behavior> of entity <xlslice>.
+Parsing entity <subsystem_entity_c5104c640d>.
+Parsing architecture <structural> of entity <subsystem_entity_c5104c640d>.
+Parsing entity <compute_set_pred_i>.
+Parsing architecture <structural> of entity <compute_set_pred_i>.
+Parsing VHDL file "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i_cw.vhd" into library work
+Parsing entity <xlclockdriver>.
+Parsing architecture <behavior> of entity <xlclockdriver>.
+Parsing entity <default_clock_driver_compute_set_pred_i>.
+Parsing architecture <structural> of entity <default_clock_driver_compute_set_pred_i>.
+Parsing entity <compute_set_pred_i_cw>.
+Parsing architecture <structural> of entity <compute_set_pred_i_cw>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <compute_set_pred_i> (architecture <structural>) from library <work>.
+
+Elaborating entity <subsystem_entity_c5104c640d> (architecture <structural>) from library <work>.
+
+Elaborating entity <xladdsub_compute_set_pred_i> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <addsb_11_0_466a9d5db3d8f7f1> (architecture <addsb_11_0_466a9d5db3d8f7f1_a>) from library <work>.
+
+Elaborating entity <constant_b437b02512> (architecture <behavior>) from library <work>.
+
+Elaborating entity <constant_963ed6358a> (architecture <behavior>) from library <work>.
+
+Elaborating entity <constant_91ef1678ca> (architecture <behavior>) from library <work>.
+
+Elaborating entity <constant_bc54100077> (architecture <behavior>) from library <work>.
+
+Elaborating entity <constant_37567836aa> (architecture <behavior>) from library <work>.
+
+Elaborating entity <constant_6293007044> (architecture <behavior>) from library <work>.
+
+Elaborating entity <xlconvert> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <convert_func_call> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <xlconvert> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <convert_func_call> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <xlconvert> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <convert_func_call> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <xlconvert> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <xlconvert> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <convert_func_call> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <inverter_e5b38cca3b> (architecture <behavior>) from library <work>.
+WARNING:HDLCompiler:871 - "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd" Line 2454: Using initial value false for op_mem_22_20_front_din since it is never assigned
+WARNING:HDLCompiler:1127 - "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd" Line 2460: Assignment to op_mem_22_20_back ignored, since the identifier is never used
+
+Elaborating entity <logical_80f90b97d0> (architecture <behavior>) from library <work>.
+
+Elaborating entity <logical_aacf6e1b0e> (architecture <behavior>) from library <work>.
+
+Elaborating entity <logical_a8f7ff4c23> (architecture <behavior>) from library <work>.
+
+Elaborating entity <mux_2af8d8c05a> (architecture <behavior>) from library <work>.
+
+Elaborating entity <mux_6ef2c99a1b> (architecture <behavior>) from library <work>.
+
+Elaborating entity <mux_67acc0d350> (architecture <behavior>) from library <work>.
+
+Elaborating entity <mux_a3706fc7d1> (architecture <behavior>) from library <work>.
+
+Elaborating entity <negate_9ede1a16c5> (architecture <behavior>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd" Line 2746: Assignment to op_mem_48_20_back ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd" Line 2738: Net <op_mem_48_20_front_din[31]> does not have a driver.
+
+Elaborating entity <relational_3ffd1d0a40> (architecture <behavior>) from library <work>.
+
+Elaborating entity <relational_3ff7ebf1f0> (architecture <behavior>) from library <work>.
+
+Elaborating entity <relational_59ca12fcca> (architecture <behavior>) from library <work>.
+
+Elaborating entity <relational_73637bf7b8> (architecture <behavior>) from library <work>.
+
+Elaborating entity <xlslice> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <xlslice> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <xlslice> (architecture <behavior>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <compute_set_pred_i>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+    Summary:
+	no macro.
+Unit <compute_set_pred_i> synthesized.
+
+Synthesizing Unit <subsystem_entity_c5104c640d>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+INFO:Xst:3210 - "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd" line 3018: Output port <c_out> of the instance <addsub> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <subsystem_entity_c5104c640d> synthesized.
+
+Synthesizing Unit <xladdsub_compute_set_pred_i>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+        core_name0 = "addsb_11_0_466a9d5db3d8f7f1"
+        a_width = 8
+        a_bin_pt = 0
+        a_arith = 1
+        c_in_width = 16
+        c_in_bin_pt = 4
+        c_in_arith = 1
+        c_out_width = 16
+        c_out_bin_pt = 4
+        c_out_arith = 1
+        b_width = 8
+        b_bin_pt = 0
+        b_arith = 1
+        s_width = 2
+        s_bin_pt = 0
+        s_arith = 1
+        rst_width = 1
+        rst_bin_pt = 0
+        rst_arith = 1
+        en_width = 1
+        en_bin_pt = 0
+        en_arith = 1
+        full_s_width = 9
+        full_s_arith = 2
+        mode = 1
+        extra_registers = 0
+        latency = 0
+        quantization = 1
+        overflow = 2
+        c_latency = 0
+        c_output_width = 9
+        c_has_c_in = 0
+        c_has_c_out = 0
+WARNING:Xst:647 - Input <c_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <xladdsub_compute_set_pred_i> synthesized.
+
+Synthesizing Unit <constant_b437b02512>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <constant_b437b02512> synthesized.
+
+Synthesizing Unit <constant_963ed6358a>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <constant_963ed6358a> synthesized.
+
+Synthesizing Unit <constant_91ef1678ca>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <constant_91ef1678ca> synthesized.
+
+Synthesizing Unit <constant_bc54100077>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <constant_bc54100077> synthesized.
+
+Synthesizing Unit <constant_37567836aa>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <constant_37567836aa> synthesized.
+
+Synthesizing Unit <constant_6293007044>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <constant_6293007044> synthesized.
+
+Synthesizing Unit <xlconvert_1>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+        din_width = 1
+        din_bin_pt = 0
+        din_arith = 1
+        dout_width = 1
+        dout_bin_pt = 0
+        dout_arith = 1
+        en_width = 1
+        en_bin_pt = 0
+        en_arith = 1
+        bool_conversion = 0
+        latency = 0
+        quantization = 1
+        overflow = 2
+WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <xlconvert_1> synthesized.
+
+Synthesizing Unit <convert_func_call_1>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+        din_width = 1
+        din_bin_pt = 0
+        din_arith = 1
+        dout_width = 1
+        dout_bin_pt = 0
+        dout_arith = 1
+        quantization = 1
+        overflow = 2
+    Summary:
+	no macro.
+Unit <convert_func_call_1> synthesized.
+
+Synthesizing Unit <xlconvert_2>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+        din_width = 32
+        din_bin_pt = 0
+        din_arith = 1
+        dout_width = 32
+        dout_bin_pt = 0
+        dout_arith = 2
+        en_width = 1
+        en_bin_pt = 0
+        en_arith = 1
+        bool_conversion = 0
+        latency = 0
+        quantization = 1
+        overflow = 2
+WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <xlconvert_2> synthesized.
+
+Synthesizing Unit <convert_func_call_2>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+        din_width = 32
+        din_bin_pt = 0
+        din_arith = 1
+        dout_width = 32
+        dout_bin_pt = 0
+        dout_arith = 2
+        quantization = 1
+        overflow = 2
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <convert_func_call_2> synthesized.
+
+Synthesizing Unit <xlconvert_3>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+        din_width = 32
+        din_bin_pt = 0
+        din_arith = 1
+        dout_width = 16
+        dout_bin_pt = 0
+        dout_arith = 2
+        en_width = 1
+        en_bin_pt = 0
+        en_arith = 1
+        bool_conversion = 0
+        latency = 0
+        quantization = 1
+        overflow = 2
+WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <xlconvert_3> synthesized.
+
+Synthesizing Unit <convert_func_call_3>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+        din_width = 32
+        din_bin_pt = 0
+        din_arith = 1
+        dout_width = 16
+        dout_bin_pt = 0
+        dout_arith = 2
+        quantization = 1
+        overflow = 2
+    Summary:
+	inferred  18 Multiplexer(s).
+Unit <convert_func_call_3> synthesized.
+
+Synthesizing Unit <xlconvert_4>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+        din_width = 1
+        din_bin_pt = 0
+        din_arith = 1
+        dout_width = 1
+        dout_bin_pt = 0
+        dout_arith = 1
+        en_width = 1
+        en_bin_pt = 0
+        en_arith = 1
+        bool_conversion = 1
+        latency = 0
+        quantization = 1
+        overflow = 2
+WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <xlconvert_4> synthesized.
+
+Synthesizing Unit <xlconvert_5>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+        din_width = 1
+        din_bin_pt = 0
+        din_arith = 1
+        dout_width = 31
+        dout_bin_pt = 0
+        dout_arith = 2
+        en_width = 1
+        en_bin_pt = 0
+        en_arith = 1
+        bool_conversion = 0
+        latency = 0
+        quantization = 1
+        overflow = 2
+WARNING:Xst:647 - Input <en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <xlconvert_5> synthesized.
+
+Synthesizing Unit <convert_func_call_4>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+        din_width = 1
+        din_bin_pt = 0
+        din_arith = 1
+        dout_width = 31
+        dout_bin_pt = 0
+        dout_arith = 2
+        quantization = 1
+        overflow = 2
+    Summary:
+	no macro.
+Unit <convert_func_call_4> synthesized.
+
+Synthesizing Unit <inverter_e5b38cca3b>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <inverter_e5b38cca3b> synthesized.
+
+Synthesizing Unit <logical_80f90b97d0>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <logical_80f90b97d0> synthesized.
+
+Synthesizing Unit <logical_aacf6e1b0e>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <logical_aacf6e1b0e> synthesized.
+
+Synthesizing Unit <logical_a8f7ff4c23>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <logical_a8f7ff4c23> synthesized.
+
+Synthesizing Unit <mux_2af8d8c05a>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_2af8d8c05a> synthesized.
+
+Synthesizing Unit <mux_6ef2c99a1b>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_6ef2c99a1b> synthesized.
+
+Synthesizing Unit <mux_67acc0d350>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_67acc0d350> synthesized.
+
+Synthesizing Unit <mux_a3706fc7d1>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit 3-to-1 multiplexer for signal <unregy_join_6_1> created at line 2706.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_a3706fc7d1> synthesized.
+
+Synthesizing Unit <negate_9ede1a16c5>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <op_mem_48_20_front_din> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 32-bit subtractor for signal <internal_ip_35_9_neg> created at line 2742.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <negate_9ede1a16c5> synthesized.
+
+Synthesizing Unit <relational_3ffd1d0a40>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit comparator equal for signal <result_12_3_rel> created at line 2795
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_3ffd1d0a40> synthesized.
+
+Synthesizing Unit <relational_3ff7ebf1f0>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit comparator greater for signal <result_16_3_rel> created at line 2822
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_3ff7ebf1f0> synthesized.
+
+Synthesizing Unit <relational_59ca12fcca>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit comparator greater for signal <result_16_3_rel> created at line 2849
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_59ca12fcca> synthesized.
+
+Synthesizing Unit <relational_73637bf7b8>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ce> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit comparator equal for signal <result_12_3_rel> created at line 2876
+    Summary:
+	inferred   1 Comparator(s).
+Unit <relational_73637bf7b8> synthesized.
+
+Synthesizing Unit <xlslice_1>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+        new_msb = 0
+        new_lsb = 0
+        x_width = 3
+        y_width = 1
+WARNING:Xst:647 - Input <x<2:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <xlslice_1> synthesized.
+
+Synthesizing Unit <xlslice_2>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+        new_msb = 1
+        new_lsb = 1
+        x_width = 3
+        y_width = 1
+WARNING:Xst:647 - Input <x<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <x<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <xlslice_2> synthesized.
+
+Synthesizing Unit <xlslice_3>.
+    Related source file is "C:\Users\andryc\Dropbox\GPGPU\gpgpu-1.0.1\matlab\integer_compute_set_pred\ngc_netlist\synth_model\compute_set_pred_i.vhd".
+        new_msb = 2
+        new_lsb = 2
+        x_width = 3
+        y_width = 1
+WARNING:Xst:647 - Input <x<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <xlslice_3> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit subtractor                                     : 1
+# Comparators                                          : 5
+ 32-bit comparator equal                               : 2
+ 32-bit comparator greater                             : 3
+# Multiplexers                                         : 49
+ 1-bit 2-to-1 multiplexer                              : 38
+ 1-bit 3-to-1 multiplexer                              : 1
+ 11-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 2
+# Xors                                                 : 32
+ 1-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <addsb_11_0_466a9d5db3d8f7f1.ngc>.
+Reading Secure Unit <blk00000001>.
+Loading core <addsb_11_0_466a9d5db3d8f7f1> for timing and area information for instance <comp0.core_instance0>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit subtractor                                     : 1
+# Comparators                                          : 5
+ 32-bit comparator equal                               : 2
+ 32-bit comparator greater                             : 3
+# Multiplexers                                         : 47
+ 1-bit 2-to-1 multiplexer                              : 36
+ 1-bit 3-to-1 multiplexer                              : 1
+ 11-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 2
+# Xors                                                 : 32
+ 1-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <subsystem_entity_c5104c640d>: instances <constant10>, <constant7> of unit <constant_963ed6358a> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <subsystem_entity_c5104c640d>: instances <constant3>, <constant4> of unit <constant_bc54100077> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <subsystem_entity_c5104c640d>: instances <constant5>, <constant8> of unit <constant_37567836aa> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <subsystem_entity_c5104c640d>: instances <constant6>, <constant9> of unit <constant_6293007044> are equivalent, second instance is removed
+
+Optimizing unit <compute_set_pred_i> ...
+
+Optimizing unit <subsystem_entity_c5104c640d> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block compute_set_pred_i, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : compute_set_pred_i.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 187
+#      GND                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 30
+#      LUT4                        : 61
+#      LUT5                        : 31
+#      LUT6                        : 20
+#      MUXCY                       : 41
+#      MUXF7                       : 1
+#      VCC                         : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx240tff1156-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  143  out of  150720     0%  
+    Number used as Logic:               143  out of  150720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    143
+   Number with an unused Flip Flop:     143  out of    143   100%  
+   Number with an unused LUT:             0  out of    143     0%  
+   Number of fully used LUT-FF pairs:     0  out of    143     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                         105
+ Number of bonded IOBs:                   0  out of    600     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 7.782ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 430406 / 34
+-------------------------------------------------------------------------
+Delay:               7.782ns (Levels of Logic = 30)
+  Source:            src_2_in(17) (PAD)
+  Destination:       result_out(31) (PAD)
+
+  Data Path: src_2_in(17) to result_out(31)
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT6:I0->O            1   0.068   0.491  subsystem_c5104c640d/convert4/std_conversion_generate.convert/Mmux_din[16]_GND_56_o_MUX_63_o11 (subsystem_c5104c640d/convert4/std_conversion_generate.convert/Mmux_din[16]_GND_56_o_MUX_63_o1)
+     LUT6:I4->O            1   0.068   0.491  subsystem_c5104c640d/convert4/std_conversion_generate.convert/Mmux_din[16]_GND_56_o_MUX_63_o12 (subsystem_c5104c640d/convert4/std_conversion_generate.convert/Mmux_din[16]_GND_56_o_MUX_63_o11)
+     LUT6:I4->O           15   0.068   0.673  subsystem_c5104c640d/convert4/std_conversion_generate.convert/Mmux_din[16]_GND_56_o_MUX_63_o13 (subsystem_c5104c640d/convert4/std_conversion_generate.convert/Mmux_din[16]_GND_56_o_MUX_63_o12)
+     LUT5:I2->O            2   0.068   0.644  subsystem_c5104c640d/mux4/Mmux_unregy_join_6_111 (subsystem_c5104c640d/mux4_y_net(0))
+     LUT4:I0->O            1   0.068   0.000  subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_lut(0) (subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_lut(0))
+     MUXCY:S->O            1   0.290   0.000  subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(0) (subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(0))
+     MUXCY:CI->O           1   0.019   0.000  subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(1) (subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(1))
+     MUXCY:CI->O           1   0.019   0.000  subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(2) (subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(2))
+     MUXCY:CI->O           1   0.019   0.000  subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(3) (subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(3))
+     MUXCY:CI->O           1   0.019   0.000  subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(4) (subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(4))
+     MUXCY:CI->O           1   0.019   0.000  subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(5) (subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(5))
+     MUXCY:CI->O           1   0.019   0.000  subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(6) (subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(6))
+     MUXCY:CI->O           1   0.019   0.000  subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(7) (subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(7))
+     MUXCY:CI->O           1   0.019   0.000  subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(8) (subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(8))
+     MUXCY:CI->O           1   0.019   0.000  subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(9) (subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(9))
+     MUXCY:CI->O           1   0.019   0.000  subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(10) (subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(10))
+     MUXCY:CI->O           1   0.019   0.000  subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(11) (subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(11))
+     MUXCY:CI->O           1   0.019   0.000  subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(12) (subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(12))
+     MUXCY:CI->O           1   0.019   0.000  subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(13) (subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(13))
+     MUXCY:CI->O           1   0.220   0.778  subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(14) (subsystem_c5104c640d/relational2/Mcompar_result_16_3_rel_cy(14))
+     LUT6:I0->O            1   0.068   0.000  subsystem_c5104c640d/mux5_y_net(1)_inv1_G (N5)
+     MUXF7:I1->O           1   0.248   0.417  subsystem_c5104c640d/mux5_y_net(1)_inv1 (subsystem_c5104c640d/mux5_y_net(1))
+     begin scope: 'subsystem_c5104c640d/addsub/comp0.core_instance0:b(1)'
+     begin scope: 'subsystem_c5104c640d/addsub/comp0.core_instance0/blk00000001:B(1)'
+     SEC:in->out           1   0.068   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.290   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.239   0.491  sec_inst (sec_net)
+     end scope: 'subsystem_c5104c640d/addsub/comp0.core_instance0/blk00000001:S(2)'
+     end scope: 'subsystem_c5104c640d/addsub/comp0.core_instance0:s(2)'
+     LUT2:I0->O            1   0.068   0.417  subsystem_c5104c640d/mux6_y_net_x01_SW0 (N2)
+     LUT6:I5->O            2   0.068   0.781  subsystem_c5104c640d/mux6_y_net_x01 (subsystem_c5104c640d/mux6_y_net_x01)
+     LUT6:I1->O            0   0.068   0.000  subsystem_c5104c640d/mux6_y_net_x02 (zero_out)
+    ----------------------------------------
+    Total                      7.782ns (2.599ns logic, 5.183ns route)
+                                       (33.4% logic, 66.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.57 secs
+ 
+--> 
+
+Total memory usage is 287736 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   93 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

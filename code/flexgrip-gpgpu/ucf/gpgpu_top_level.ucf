@@ -1,0 +1,11 @@
+# PlanAhead Generated physical constraints 
+
+NET "sys_clk" LOC = "J9";
+NET "block_scheduler_en" LOC = "G26";
+NET "kernel_done" LOC = "AC22";
+NET "host_reset" LOC = "H10";
+NET "host_reset" CLOCK_DEDICATED_ROUTE = FALSE;
+# Clock constraints
+
+NET "sys_clk" TNM_NET = "sys_clk";
+TIMESPEC "TS_sys_clk" = PERIOD "sys_clk" 10 ns;

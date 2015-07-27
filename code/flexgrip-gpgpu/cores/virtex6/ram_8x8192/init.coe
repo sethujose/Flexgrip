@@ -1,0 +1,5 @@
+; Sample initialization file for a
+; 8-bit wide by 8192 deep RAM
+memory_initialization_radix = 16;
+memory_initialization_vector =
+08;

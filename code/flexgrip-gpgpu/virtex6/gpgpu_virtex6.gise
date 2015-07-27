@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="gpgpu_virtex6.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="../cores/virtex6/ram_8x262144/ram_8x262144.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_top_level.fdo"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_LOG" xil_pn:name="vsim.wlf"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="work"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1391799290" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1391799290">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1391799290" xil_pn:in_ck="6305301574892878857" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1391799290">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../src/address_register_controller.vhd"/>
+      <outfile xil_pn:name="../src/arbiter.vhd"/>
+      <outfile xil_pn:name="../src/block_scheduler.vhd"/>
+      <outfile xil_pn:name="../src/branch_exec_unit.vhd"/>
+      <outfile xil_pn:name="../src/bshift.vhd"/>
+      <outfile xil_pn:name="../src/compute_pred_flags.vhd"/>
+      <outfile xil_pn:name="../src/constant_memory_controller.vhd"/>
+      <outfile xil_pn:name="../src/convert_data_types.vhd"/>
+      <outfile xil_pn:name="../src/effective_address.vhd"/>
+      <outfile xil_pn:name="../src/fence_registers.vhd"/>
+      <outfile xil_pn:name="../src/global_memory_controller.vhd"/>
+      <outfile xil_pn:name="../src/gpgpu_configuration.vhd"/>
+      <outfile xil_pn:name="../src/gpgpu_ml605_top_level.vhd"/>
+      <outfile xil_pn:name="../src/gpgpu_package.vhd"/>
+      <outfile xil_pn:name="../src/gpgpu_statistics.vhd"/>
+      <outfile xil_pn:name="../src/increment_address.vhd"/>
+      <outfile xil_pn:name="../src/local_address.vhd"/>
+      <outfile xil_pn:name="../src/memory_controller.vhd"/>
+      <outfile xil_pn:name="../src/pipeline_decode.vhd"/>
+      <outfile xil_pn:name="../src/pipeline_execute.vhd"/>
+      <outfile xil_pn:name="../src/pipeline_fetch.vhd"/>
+      <outfile xil_pn:name="../src/pipeline_read.vhd"/>
+      <outfile xil_pn:name="../src/pipeline_write.vhd"/>
+      <outfile xil_pn:name="../src/predicate_lut.vhd"/>
+      <outfile xil_pn:name="../src/predicate_register_controller.vhd"/>
+      <outfile xil_pn:name="../src/read_source_ops.vhd"/>
+      <outfile xil_pn:name="../src/register_ld.vhd"/>
+      <outfile xil_pn:name="../src/scalar_processor.vhd"/>
+      <outfile xil_pn:name="../src/shared_memory_controller.vhd"/>
+      <outfile xil_pn:name="../src/shift_register.vhd"/>
+      <outfile xil_pn:name="../src/stack.vhd"/>
+      <outfile xil_pn:name="../src/streaming_multiprocessor.vhd"/>
+      <outfile xil_pn:name="../src/streaming_multiprocessor_cntlr.vhd"/>
+      <outfile xil_pn:name="../src/streaming_multiprocessor_configuration.vhd"/>
+      <outfile xil_pn:name="../src/system_memory_cntlr.vhd"/>
+      <outfile xil_pn:name="../src/vector_register_controller.vhd"/>
+      <outfile xil_pn:name="../src/warp_checker.vhd"/>
+      <outfile xil_pn:name="../src/warp_configuration.vhd"/>
+      <outfile xil_pn:name="../src/warp_generator.vhd"/>
+      <outfile xil_pn:name="../src/warp_scheduler.vhd"/>
+      <outfile xil_pn:name="../src/warp_unit.vhd"/>
+      <outfile xil_pn:name="../src/warps_done_mask_LUT.vhd"/>
+      <outfile xil_pn:name="../testbench/src/address_registers_16.vhd"/>
+      <outfile xil_pn:name="../testbench/src/address_registers_32.vhd"/>
+      <outfile xil_pn:name="../testbench/src/address_registers_8.vhd"/>
+      <outfile xil_pn:name="../testbench/src/autocor_configuration.vhd"/>
+      <outfile xil_pn:name="../testbench/src/autocor_instructions.vhd"/>
+      <outfile xil_pn:name="../testbench/src/bitonic_sort_configuration.vhd"/>
+      <outfile xil_pn:name="../testbench/src/bitonic_sort_instr.vhd"/>
+      <outfile xil_pn:name="../testbench/src/block_id_calc.vhd"/>
+      <outfile xil_pn:name="../testbench/src/boolean_functions.vhd"/>
+      <outfile xil_pn:name="../testbench/src/calculate_address.vhd"/>
+      <outfile xil_pn:name="../testbench/src/compute_set_pred_i.vhd"/>
+      <outfile xil_pn:name="../testbench/src/convert_int_int.vhd"/>
+      <outfile xil_pn:name="../testbench/src/integer_add_subtract.vhd"/>
+      <outfile xil_pn:name="../testbench/src/integer_mult_24.vhd"/>
+      <outfile xil_pn:name="../testbench/src/matrix_mult_configuration.vhd"/>
+      <outfile xil_pn:name="../testbench/src/matrix_mult_cubin_instructions.vhd"/>
+      <outfile xil_pn:name="../testbench/src/matrix_mult_sass_instructions.vhd"/>
+      <outfile xil_pn:name="../testbench/src/min_max.vhd"/>
+      <outfile xil_pn:name="../testbench/src/predicate_registers_16.vhd"/>
+      <outfile xil_pn:name="../testbench/src/predicate_registers_32.vhd"/>
+      <outfile xil_pn:name="../testbench/src/predicate_registers_8.vhd"/>
+      <outfile xil_pn:name="../testbench/src/read_data.vhd"/>
+      <outfile xil_pn:name="../testbench/src/reduction_configuration.vhd"/>
+      <outfile xil_pn:name="../testbench/src/reduction_kernel_inst.vhd"/>
+      <outfile xil_pn:name="../testbench/src/shift_logical.vhd"/>
+      <outfile xil_pn:name="../testbench/src/tb_configuration.vhd"/>
+      <outfile xil_pn:name="../testbench/src/tb_top_level.vhd"/>
+      <outfile xil_pn:name="../testbench/src/thread_id_calc.vhd"/>
+      <outfile xil_pn:name="../testbench/src/transpose_configuration.vhd"/>
+      <outfile xil_pn:name="../testbench/src/transpose_inst.vhd"/>
+      <outfile xil_pn:name="../testbench/src/twice_kernel_instructions.vhd"/>
+      <outfile xil_pn:name="../testbench/src/vector_register_file_16.vhd"/>
+      <outfile xil_pn:name="../testbench/src/vector_register_file_32.vhd"/>
+      <outfile xil_pn:name="../testbench/src/vector_register_file_8.vhd"/>
+      <outfile xil_pn:name="../testbench/src/warp_id_calc.vhd"/>
+      <outfile xil_pn:name="../testbench/src/warps_per_block_calc.vhd"/>
+      <outfile xil_pn:name="../testbench/src/write_instructions.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1391799290" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7179337232587336523" xil_pn:start_ts="1391799290">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1391799290" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3485134408231813253" xil_pn:start_ts="1391799290">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1391799291" xil_pn:in_ck="-6112129120680449770" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="3250262402859933088" xil_pn:start_ts="1391799290">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../cores/virtex6/dp_ram_128x32/dp_ram_128x32.ngc"/>
+      <outfile xil_pn:name="../cores/virtex6/dp_ram_128x32/dp_ram_128x32.vhd"/>
+      <outfile xil_pn:name="../cores/virtex6/dp_ram_2x32/dp_ram_2x32.ngc"/>
+      <outfile xil_pn:name="../cores/virtex6/dp_ram_2x32/dp_ram_2x32.vhd"/>
+      <outfile xil_pn:name="../cores/virtex6/dp_ram_8x512/dp_ram_8x512.ngc"/>
+      <outfile xil_pn:name="../cores/virtex6/dp_ram_8x512/dp_ram_8x512.vhd"/>
+      <outfile xil_pn:name="../cores/virtex6/ram_8x16384/ram_8x16384.ngc"/>
+      <outfile xil_pn:name="../cores/virtex6/ram_8x16384/ram_8x16384.vhd"/>
+      <outfile xil_pn:name="../cores/virtex6/ram_8x262144/ram_8x262144.ngc"/>
+      <outfile xil_pn:name="../cores/virtex6/ram_8x262144/ram_8x262144.vhd"/>
+      <outfile xil_pn:name="../cores/virtex6/ram_8x8192/ram_8x8192.ngc"/>
+      <outfile xil_pn:name="../cores/virtex6/ram_8x8192/ram_8x8192.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1391799291" xil_pn:in_ck="566968935858740591" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1391799291">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../cores/virtex6/dp_ram_128x32/dp_ram_128x32.vhd"/>
+      <outfile xil_pn:name="../cores/virtex6/dp_ram_2x32/dp_ram_2x32.vhd"/>
+      <outfile xil_pn:name="../cores/virtex6/dp_ram_8x512/dp_ram_8x512.vhd"/>
+      <outfile xil_pn:name="../cores/virtex6/ram_8x16384/ram_8x16384.vhd"/>
+      <outfile xil_pn:name="../cores/virtex6/ram_8x262144/ram_8x262144.vhd"/>
+      <outfile xil_pn:name="../cores/virtex6/ram_8x8192/ram_8x8192.vhd"/>
+      <outfile xil_pn:name="../src/address_register_controller.vhd"/>
+      <outfile xil_pn:name="../src/arbiter.vhd"/>
+      <outfile xil_pn:name="../src/block_scheduler.vhd"/>
+      <outfile xil_pn:name="../src/branch_exec_unit.vhd"/>
+      <outfile xil_pn:name="../src/bshift.vhd"/>
+      <outfile xil_pn:name="../src/compute_pred_flags.vhd"/>
+      <outfile xil_pn:name="../src/constant_memory_controller.vhd"/>
+      <outfile xil_pn:name="../src/convert_data_types.vhd"/>
+      <outfile xil_pn:name="../src/effective_address.vhd"/>
+      <outfile xil_pn:name="../src/fence_registers.vhd"/>
+      <outfile xil_pn:name="../src/global_memory_controller.vhd"/>
+      <outfile xil_pn:name="../src/gpgpu_configuration.vhd"/>
+      <outfile xil_pn:name="../src/gpgpu_ml605_top_level.vhd"/>
+      <outfile xil_pn:name="../src/gpgpu_package.vhd"/>
+      <outfile xil_pn:name="../src/gpgpu_statistics.vhd"/>
+      <outfile xil_pn:name="../src/increment_address.vhd"/>
+      <outfile xil_pn:name="../src/local_address.vhd"/>
+      <outfile xil_pn:name="../src/memory_controller.vhd"/>
+      <outfile xil_pn:name="../src/pipeline_decode.vhd"/>
+      <outfile xil_pn:name="../src/pipeline_execute.vhd"/>
+      <outfile xil_pn:name="../src/pipeline_fetch.vhd"/>
+      <outfile xil_pn:name="../src/pipeline_read.vhd"/>
+      <outfile xil_pn:name="../src/pipeline_write.vhd"/>
+      <outfile xil_pn:name="../src/predicate_lut.vhd"/>
+      <outfile xil_pn:name="../src/predicate_register_controller.vhd"/>
+      <outfile xil_pn:name="../src/read_source_ops.vhd"/>
+      <outfile xil_pn:name="../src/register_ld.vhd"/>
+      <outfile xil_pn:name="../src/scalar_processor.vhd"/>
+      <outfile xil_pn:name="../src/shared_memory_controller.vhd"/>
+      <outfile xil_pn:name="../src/shift_register.vhd"/>
+      <outfile xil_pn:name="../src/stack.vhd"/>
+      <outfile xil_pn:name="../src/streaming_multiprocessor.vhd"/>
+      <outfile xil_pn:name="../src/streaming_multiprocessor_cntlr.vhd"/>
+      <outfile xil_pn:name="../src/streaming_multiprocessor_configuration.vhd"/>
+      <outfile xil_pn:name="../src/system_memory_cntlr.vhd"/>
+      <outfile xil_pn:name="../src/vector_register_controller.vhd"/>
+      <outfile xil_pn:name="../src/warp_checker.vhd"/>
+      <outfile xil_pn:name="../src/warp_configuration.vhd"/>
+      <outfile xil_pn:name="../src/warp_generator.vhd"/>
+      <outfile xil_pn:name="../src/warp_scheduler.vhd"/>
+      <outfile xil_pn:name="../src/warp_unit.vhd"/>
+      <outfile xil_pn:name="../src/warps_done_mask_LUT.vhd"/>
+      <outfile xil_pn:name="../testbench/src/address_registers_16.vhd"/>
+      <outfile xil_pn:name="../testbench/src/address_registers_32.vhd"/>
+      <outfile xil_pn:name="../testbench/src/address_registers_8.vhd"/>
+      <outfile xil_pn:name="../testbench/src/autocor_configuration.vhd"/>
+      <outfile xil_pn:name="../testbench/src/autocor_instructions.vhd"/>
+      <outfile xil_pn:name="../testbench/src/bitonic_sort_configuration.vhd"/>
+      <outfile xil_pn:name="../testbench/src/bitonic_sort_instr.vhd"/>
+      <outfile xil_pn:name="../testbench/src/block_id_calc.vhd"/>
+      <outfile xil_pn:name="../testbench/src/boolean_functions.vhd"/>
+      <outfile xil_pn:name="../testbench/src/calculate_address.vhd"/>
+      <outfile xil_pn:name="../testbench/src/compute_set_pred_i.vhd"/>
+      <outfile xil_pn:name="../testbench/src/convert_int_int.vhd"/>
+      <outfile xil_pn:name="../testbench/src/integer_add_subtract.vhd"/>
+      <outfile xil_pn:name="../testbench/src/integer_mult_24.vhd"/>
+      <outfile xil_pn:name="../testbench/src/matrix_mult_configuration.vhd"/>
+      <outfile xil_pn:name="../testbench/src/matrix_mult_cubin_instructions.vhd"/>
+      <outfile xil_pn:name="../testbench/src/matrix_mult_sass_instructions.vhd"/>
+      <outfile xil_pn:name="../testbench/src/min_max.vhd"/>
+      <outfile xil_pn:name="../testbench/src/predicate_registers_16.vhd"/>
+      <outfile xil_pn:name="../testbench/src/predicate_registers_32.vhd"/>
+      <outfile xil_pn:name="../testbench/src/predicate_registers_8.vhd"/>
+      <outfile xil_pn:name="../testbench/src/read_data.vhd"/>
+      <outfile xil_pn:name="../testbench/src/reduction_configuration.vhd"/>
+      <outfile xil_pn:name="../testbench/src/reduction_kernel_inst.vhd"/>
+      <outfile xil_pn:name="../testbench/src/shift_logical.vhd"/>
+      <outfile xil_pn:name="../testbench/src/tb_configuration.vhd"/>
+      <outfile xil_pn:name="../testbench/src/tb_top_level.vhd"/>
+      <outfile xil_pn:name="../testbench/src/thread_id_calc.vhd"/>
+      <outfile xil_pn:name="../testbench/src/transpose_configuration.vhd"/>
+      <outfile xil_pn:name="../testbench/src/transpose_inst.vhd"/>
+      <outfile xil_pn:name="../testbench/src/twice_kernel_instructions.vhd"/>
+      <outfile xil_pn:name="../testbench/src/vector_register_file_16.vhd"/>
+      <outfile xil_pn:name="../testbench/src/vector_register_file_32.vhd"/>
+      <outfile xil_pn:name="../testbench/src/vector_register_file_8.vhd"/>
+      <outfile xil_pn:name="../testbench/src/warp_id_calc.vhd"/>
+      <outfile xil_pn:name="../testbench/src/warps_per_block_calc.vhd"/>
+      <outfile xil_pn:name="../testbench/src/write_instructions.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1391799293" xil_pn:in_ck="566968935858740591" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3595092242684651580" xil_pn:start_ts="1391799291">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="tb_top_level.fdo"/>
+      <outfile xil_pn:name="vsim.wlf"/>
+      <outfile xil_pn:name="work"/>
+    </transform>
+    <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
+
+</generated_project>
